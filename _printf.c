@@ -13,7 +13,9 @@
 int print_c(va_list args)
 {
 	char c = va_arg(args, int);
+
 	_putchar(c);
+
 	return (1);
 }
 
@@ -28,6 +30,7 @@ int print_str(va_list args)
 {
 	char *s = va_arg(args, char *);
 	int count = 0;
+
 	if (s == NULL)
 		s = "(null)";
 	while (s[count] != '\0')
@@ -88,9 +91,7 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			if (format[i] == '\0')
-			{
 				return (-1);
-			}
 			for (j = 0; selector[j].format != NULL; j++)
 			{
 				if (format[i] == selector[j].format[1])
