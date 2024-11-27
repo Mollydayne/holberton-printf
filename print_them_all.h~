@@ -1,0 +1,28 @@
+#ifndef PRINT_THEM_ALL_H
+#define PRINT_THEM_ALL_H
+
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdarg.h>
+#include <unistd.h>
+
+/**
+* struct structype - Associate a format and the function
+* @format: Format specifier
+* @func: Pointer to the good function for the format
+*/
+typedef struct structype
+{
+char *format;
+int (*func)(char *format, va_list);
+} structype_t;
+
+int _printf(char *format, ...);
+int _putchar(char c);
+int _print_c(va_list list);
+int _print_str(va_list list);
+int _print_percent(va_list list);
+
+#endif

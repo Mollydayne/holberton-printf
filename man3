@@ -1,0 +1,44 @@
+Man page : printf
+
+1. Name : printf
+
+2. Synopsis : 
+
+#include "print_them_all.h"
+int _printf(const char *format, ...);
+
+3. Description :
+
+Our _printf function is a custom version of the standard printf function. It shows formatted stdout, according to the format string, wich is the first argument we give to the function, followed by a number. The number is a variable argument. 
+
+The format string contains regular characters (like for exemple 'A') and conversion specifiers, wich are identified by a %. These specifiers indicates how the arguments should be displayed in the stdout.
+
+Supported specifiers :
+
+Supported Conversion Specifiers:
+
+%c : Prints a single character.
+%s : Prints a null-terminated string.
+%d : Prints a signed decimal integer.
+%i : Prints a signed decimal integer (same as %d).
+%% : Prints a literal % character.
+
+Examples : 
+
+_printf("Character: %c\n", 'A');
+
+The output will be : 
+
+Character: A
+
+And for printing integers :
+
+_printf("Integer: %d, Signed: %i\n", 42, -42);
+
+The output will be : 
+
+Integer: 42, Signed: -42
+
+Authors:
+
+This fantastic function was written and designed by Clarisse Perez and Karim Habouchi in 2024.
