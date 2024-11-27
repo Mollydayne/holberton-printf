@@ -1,10 +1,11 @@
 *.swp
 *.swo
-*.~
+*~
 *.o
 *.out
 *.exe
 
 *.log
-
+main
 /build/
+.vscode

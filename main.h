@@ -9,17 +9,17 @@
 #include <unistd.h>
 
 /**
-* struct selector - Associate a format and the function
-* @format: Format specifier
-* @func: Pointer to the good function for the format
-*/
+ * struct selector - Associate a format and the function
+ * @format: Format specifier
+ * @func: Pointer to the good function for the format
+ */
 typedef struct selector
 {
-char *format;
-int (*func)(char *format, va_list);
+	char *format;
+	int (*func)(va_list);
 } structype_t;
 
-int _printf(char *format, ...);
+int _printf(const char *format, ...);
 int _putchar(char c);
 int print_c(va_list list);
 int print_str(va_list list);
