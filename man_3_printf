@@ -1,11 +1,12 @@
 Man page : printf
 
-1. Name : printf
+           1. Name : printf
 
-2. Synopsis : 
+                     2. Synopsis :
 
 #include "print_them_all.h"
-int _printf(const char *format, ...);
+    int
+    _printf(const char *format, ...);
 
 3. Description :
 
@@ -35,10 +36,11 @@ And for printing integers :
 
 _printf("Integer: %d, Signed: %i\n", 42, -42);
 
-The output will be : 
+The output will be :
 
-Integer: 42, Signed: -42
+    Integer : 42,
+    Signed : -42
 
-Authors:
+             Authors :
 
-This fantastic function was written and designed by Clarisse Perez and Karim Habouchi in 2024.
+    This fantastic function was written and designed by Clarisse Perez and Karim Habouchi in 2024.
