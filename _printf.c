@@ -5,62 +5,6 @@
 #include "main.h"
 
 /**
- * print_c - Prints a single character from a variadic list
- * @args: The variadic list containing the character
- *
- * Return: Always 1 (number of characters printed)
- */
-int print_c(va_list args)
-{
-	char c = va_arg(args, int);
-
-	_putchar(c);
-
-	return (1);
-}
-
-/**
- *print_str - Prints a string from a variadic list
- * @args: The variadic list containing the string
- *
- * Return: The number of characters printed
- */
-
-int print_str(va_list args)
-{
-	char *s = va_arg(args, char *);
-	int count = 0;
-
-	if (s == NULL)
-		s = "(null)";
-	while (s[count] != '\0')
-	{
-		_putchar(s[count]);
-		count++;
-	}
-	return (count);
-}
-
-/**
- * print_percent - Handles the %% specifier.
- * @format: The format string (unused in this case).
- * @args: The list of arguments (unused in this case).
- *
- * Description: This function simply prints a '%' character
- * when %% is encountered in the format string.
- *
- * Return: 1 (the number of characters printed).
- */
-
-int print_percent(va_list args)
-{
-	(void)args;
-
-	_putchar('%');
-	return (1);
-}
-
-/**
  * _printf - Custom version of the printf function
  * @format: The format specifier string to match.
  *
