@@ -29,13 +29,19 @@ The function also handles unsupported specifiers by printing % followed by the u
 
 # Files :
 
-| **Filename**     | **Description**                                                                 |
-|-------------------|---------------------------------------------------------------------------------|
-| `main.h`         | Header file containing all function prototypes, macros, and type definitions.   |
-| `_printf.c`      | Main file implementing the custom `_printf` function.                           |
-| `_putchar.c`     | Custom `_putchar` function for character output.                                |
-| `.gitignore`     | Specifies files to be ignored by Git (temporary files)                          |
-| `man_3_printf`   | Manual page file describing the usage, functionality, and examples of `_printf`.|
+| **Filename**        | **Description**                                                                 |
+|---------------------|---------------------------------------------------------------------------------|
+| `main.h`            | Header file containing all function prototypes, macros, and type definitions.   |
+| `_printf.c`         | Main file implementing the custom `_printf` function.                           |
+| `_putchar.c`        | Custom `_putchar` function for character output.                                |
+| `.gitignore`        | Specifies files to be ignored by Git (temporary files)                          |
+| `man_3_printf`      | Manual page file describing the usage, functionality, and examples of `_printf`.|
+| `print_c.c`         | Function to handle %c.                                                          |
+| `print_str.c`       | Function to handle %s.                                                          |
+| `print_percent.c`   | Function to handle %%.                                                          |
+| `print_int.c`       | Function to handle %i and %d.                                                   |
+
+
 
 
 # How to compile
@@ -48,10 +54,10 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o _printf
 
 # Acknowledgements
 
-This project was developed as part of an educational program with Holberton school  to strengthen low-level programming skills. It adheres to strict constraints such as limited use of standard library functions and careful memory management.
+This project was developed as part of an educational program with Holberton school  to strengthen low-level programming skills. It adheres to strict constraints such as limited use of standard library functions.
 
 # Authors
 
 🌸 Clarisse Perez 🌸
 
-Karim Habouchi 
+Karim Habouchi
