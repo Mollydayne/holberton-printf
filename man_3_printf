@@ -1,46 +1,55 @@
-Man page : printf
-
-           1. Name : printf
-
-                     2. Synopsis :
-
-#include "print_them_all.h"
-    int
-    _printf(const char *format, ...);
-
-3. Description :
-
-Our _printf function is a custom version of the standard printf function. It shows formatted stdout, according to the format string, wich is the first argument we give to the function, followed by a number. The number is a variable argument. 
+.Dt novembre 2024      
+.Sh NAME                
+.Nm _printf
+.Nd
+.Sh SYNOPSIS             
+.Nm int _printf(const char *format, ...)
+.Sh DESCRIPTION         
+Our _printf function is a custom version of the standard printf function.
+.Pp
+.Pp 
+It shows formatted stdout, according to the format string, wich is the first argument we give to the function, followed by a number. The number is a variable argument. 
 
 The format string contains regular characters (like for exemple 'A') and conversion specifiers, wich are identified by a %. These specifiers indicates how the arguments should be displayed in the stdout.
 
-Supported specifiers :
+.Sh Supported Conversion Specifiers:
 
-Supported Conversion Specifiers:
-
-%c : Prints a single character.
+.Pp
+%c : Prints a single character. 
+.Pp 
 %s : Prints a null-terminated string.
+.Pp 
 %d : Prints a signed decimal integer.
+.Pp
 %i : Prints a signed decimal integer (same as %d).
+.Pp
 %% : Prints a literal % character.
 
-Examples : 
 
+.El                      \" Ends the list
+.Pp
+
+.Sh Examples          
+
+.Nm For a character :
+.Pp
 _printf("Character: %c\n", 'A');
-
-The output will be : 
-
+.Pp
+.Nm The output will be :
+.Pp
 Character: A
-
-And for printing integers :
-
+.Pp
+.Nm And for printing integers :
+.Pp
 _printf("Integer: %d, Signed: %i\n", 42, -42);
+.Pp
+.Nm The output will be : 
+.Pp
+Integer: 42, Signed: -42
 
-The output will be :
 
-    Integer : 42,
-    Signed : -42
+.El                      
 
-             Authors :
-
-    This fantastic function was written and designed by Clarisse Perez and Karim Habouchi in 2024.
+.Sh Authors
+.
+This fantastic function was written and designed by Clarisse Perez and Karim Habouchi in november 2024.
