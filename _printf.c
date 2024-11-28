@@ -72,6 +72,8 @@ int _printf(const char *format, ...)
 	structype_t selector[] = {
 		{"%c", print_c},
 		{"%s", print_str},
+		{"%i", print_int},
+		{"%d", print_int},
 		{"%%", print_percent},
 		{NULL, NULL}};
 
